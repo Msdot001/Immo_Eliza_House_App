@@ -47,7 +47,8 @@ y_test = y_test.values.ravel()
 y_train = y_train.values.ravel()
 
 model = train(X_train, y_train)
-predict(model,X_test)
+y_pred = predict(model,X_test)
+
 
 
 
