@@ -4,7 +4,7 @@
 
 ## Host organization:
 * <a href="https://github.com/becodeorg"><strong>BeCode</strong></a>(Ghent campus)
-<img src="https://becode.org/app/uploads/2021/06/logo-becode.png" alt="Logo" width="200" height="200">
+<p align="center"><img src="https://becode.org/app/uploads/2021/06/logo-becode.png" alt="Logo" width="200" height="200"></p>
   
 ## Project Pipeline:
 * <a><strong>Pipeline for Deploying Machine Learning</strong></a>
