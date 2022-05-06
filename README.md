@@ -6,6 +6,9 @@
 * <a href="https://github.com/becodeorg"><strong>BeCode</strong></a>(Ghent campus)
 <img src="https://becode.org/app/uploads/2021/06/logo-becode.png" alt="Logo" width="200" height="200">
   
+## Project Pipeline:
+* <a><strong>Pipeline for Deploying Machine Learning</strong></a>
+<img src="https://miro.medium.com/max/1400/0*BxqrsN_OjKUk6nr8.png" alt="Logo" width="200" height="200">
 
 # Project Overview
 
@@ -13,7 +16,7 @@
 - Type of Challenge: `Learning`
 - Duration: `6 days`
 - Deadline: `05/06/2022 12:30 PM`
-- Presentation: `06/05/2022 1:30 PM`
+- Presentation: `05/06/2022 1:30 PM`
 - Team challenge : 'Solo project'
 - Developer : [`Moshood Owolabi`](https://www.linkedin.com/in/moshood-owolabi)
 - Level: `Junior Developer`
@@ -105,43 +108,28 @@ Subsequent version would include additional input such as:
 │   │ prediction.py               : Script used to predict a new house's price.          
 │___  
 |    template
-│   | index.html                  : Script used to get user input for the prediction.
+│   | index.html                  : Script used to get users input for the prediction.
 |___
 |   static
-│   │ style.css                   : Script used styling the App webpage.          
+│   │ style.css                   : Script used for styling the App webpage.          
 ```
-
-## Installation & Usage
-To run execute below commands
-
-      clone the repository.
-      cd Preprocessing. 
-      Run cleaning_data.py : "New csv file will be generate"
-      cd.. and cd  Model
-      Run prediction.py with url of the new csv file will be generate
-      "model.pkl" will be generate.
-      cd..
-      Run app.py
-      copy the html generate to browaer of your choice. 
-      
 
 ## Details
 Gradient-Boosting-Regression model, Flask and  heroku were used for modelling, development and deployment respectively. 
 
-After testing most regression model, Gradient-Boosting-regression seems to have the highest accurary for the 3 features considered to make predictions.  
-
+After testing most regression model, Gradient-Boosting-regression seems to have the highest accurary of prediction considered the 3 feature used.  
 To cleaning the data; All the NaN, duplicate, text data were handle to my best knowledge.
-Explorary data analaysis and Correlation was perform to have an insight about the data at sets. 
+Exploratory data analaysis and Correlation was perform to have an insight about the datasets. 
 For this version, all categorical variables were dropped.
 
 The data was seperated into dependent variable (Price) and independent variable, which are mostly numerical variable(Area, Numbers of Room, and Garden surface).
 To train the model, the data was splitted into trained(70%) and test data(30%).
 
-The Flask App was developed based GET and POST request method. 
+The Flask App was developed based on GET and POST request method. 
 
 The App was deployed to heroku using GitHub.
 
-At the end, an App that can predict the price of house bases on three feature; Area, Numbers of Rooms and Gardens surface was developed and deployed.
+At the end, an App that can predict the price of house bases on three feature; $Area$, $Numbers of Rooms$ and $Gardens surface$ was developed and deployed.
 
 ## Used Language and Libraries:
 Python libraries:
@@ -152,5 +140,18 @@ Python libraries:
 * Gunicorn
 
 GitHub
+
 Heroku
 
+## Installation & Usage
+To run execute below commands
+
+      clone the repository.
+      cd Preprocessing. 
+      Run cleaning_data.py : "New csv file will be generated"
+      cd.. and cd  Model
+      Run prediction.py with url of the new csv file generated
+      "model.pkl" will be generated.
+      cd..
+      Run app.py
+      copy the html generate to browser of your choice. 
