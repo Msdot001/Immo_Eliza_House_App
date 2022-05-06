@@ -8,7 +8,7 @@
   
 ## Project Pipeline:
 * <a><strong>Pipeline for Deploying Machine Learning</strong></a>
-<p align="center"><img src="https://miro.medium.com/max/1400/0*BxqrsN_OjKUk6nr8.png" alt="Logo" width="400" height="300"></p>
+<p align="center"><img src="https://miro.medium.com/max/1400/0*BxqrsN_OjKUk6nr8.png" alt="Logo" width="500" height="400"></p>
 
 # Project Overview
 
