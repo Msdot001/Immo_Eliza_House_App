@@ -1,5 +1,5 @@
 <h2> <align="center">Machine learning API Deployment using Properties data from ImmoEliza</h1>
-<p align="center"><img src="https://immoelissa.be/wp-content/uploads/2021/11/4372580_30803501-1024x682.jpg" width="500" height="400"></p>
+<p align="center"><img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"></p>
 
 
 ## Host organization:
@@ -25,10 +25,10 @@
 
 ## Learning objectives
 
-At the end of this challenge, you should :
+This challenge is designed to help you learn how to deploy a machine learning model using Flask API and Heroku. By the end of this challenge, you should be able to deploy a machine learning model, create a Flask API that can handle the model, and deploy the API to Heroku.
 
-- Be able to deploy a machine learning model.
-- Be able to create a Flask API that can handle a machine learning model.
+- Understand how to deploy a machine learning model.
+- Learn how to create a Flask API that can handle a machine learning model.
 - Deploy an API to Heroku.
 
 ## The Mission
@@ -44,9 +44,10 @@ In addition, they would like you to create an API to let their web-developers cr
 Ideally, your API would ask a user to provide with information about a property (features) and return the estimated price using your model.
 
 ## Description
-Python scripts to scrape from www.immoweb.be for houses and apartments in the market for sale. 
-It uses threading and it can be run many times. Ideal is; for a standard pc with 16 GB memory and i7 cpu,  20 threads while scraping properties and 100 urls for each thread.
-It takes around 50 minutes for scraping 2000 properties.
+The purpose of this report is to document the development of a Python web scraping project that was completed as a solo project. The project involved creating a script to scrape data from www.immoweb.be for houses and apartments that are on the market for sale.
+
+### Methodology:
+The project was completed using Python, and threading was implemented to enable the script to gather data quickly and efficiently. The recommended setup for the script was to use 20 threads on a standard PC with 16 GB memory and an i7 CPU. The script was designed to handle up to 100 URLs for each thread, which allowed it to gather data on up to 2000 properties in approximately 50 minutes.
 
 ### Input
 
@@ -115,21 +116,17 @@ Subsequent version would include additional input such as:
 ```
 
 ## Details
-Gradient-Boosting-Regression model, Flask and  heroku were used for modelling, development and deployment respectively. 
+This report outlines my solo project on developing and deploying a Gradient-Boosting-Regression model using Flask and Heroku. After testing various regression models, Gradient-Boosting-Regression was found to have the highest accuracy of prediction, considering the three features used in the model.
 
-After testing most regression model, Gradient-Boosting-regression seems to have the highest accurary of prediction considered the 3 feature used.  
-To cleaning the data; All the NaN, duplicate, text data were handle to my best knowledge.
-Exploratory data analaysis and Correlation was perform to have an insight about the datasets. 
-For this version, all categorical variables were dropped.
+To ensure the data was cleaned and handled accurately, NaN, duplicate, and text data were removed. Exploratory data analysis and correlation analysis were performed to gain insight into the dataset. For this version, categorical variables were dropped.
 
-The data was seperated into dependent variable (Price) and independent variable, which are mostly numerical variable(Area, Numbers of Room, and Garden surface).
-To train the model, the data was splitted into trained(70%) and test data(30%).
+The data was separated into the dependent variable (Price) and independent variables (Area, Number of Rooms, and Garden Surface). To train the model, the data was split into 70% training and 30% test data.
 
-The Flask App was developed based on GET and POST request method. 
+The Flask app was developed using GET and POST request methods. The app allows users to predict the price of a house based on three features.
 
-The App was deployed to heroku using GitHub.
+The app was deployed to Heroku using GitHub, and is now accessible to users.
 
-At the end, an App that can predict the price of house bases on three feature; $Area$, $Numbers of Rooms$ and $Gardens surface$ was developed and deployed.
+Overall, this project demonstrates my ability to develop and deploy a machine learning model using Flask and Heroku. The resulting app provides a valuable tool for predicting the price of a house, based on key features.
 
 ## Used Language and Libraries:
 Python libraries:
@@ -144,6 +141,20 @@ GitHub
 Heroku
 
 ## Installation & Usage
+For Installation and Usage of this project, follow the steps below:
+
+- Clone the repository to your local machine.
+- Navigate to the Preprocessing directory in your terminal.
+- Run the cleaning_data.py script to clean the data. A new CSV file will be generated.
+- Navigate to the Model directory.
+- Run the prediction.py script with the URL of the new CSV file generated in step 3. This will generate the model.pkl file.
+- Navigate back to the root directory of the project.
+- Run the app.py script to start the Flask app.
+- Once the app is running, copy the URL generated and paste it into the browser of your choice to access the app.
+
+These steps will ensure that the data is cleaned and the model is trained before the app is launched. Once the app is running, users can input data and receive a predicted price for a house based on key features.
+
+
 To run execute below commands
 
       clone the repository.
